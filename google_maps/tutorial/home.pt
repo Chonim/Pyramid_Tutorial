@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quick Tutorial: ${name}</title>
+    <link rel="stylesheet"
+          href="${request.static_url('tutorial:static/style.css') }"/>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBsYVLaGllEz-XZYoF6xv_wqPsrG0k7oFs&libraries=places&callback=initMap"
+        async defer></script>
+    <script src="${request.static_url('tutorial:static/app.js') }"></script>
+</head>
+<body>
+<h1 id="page-title">Hi ${name}</h1>
+<div id="map"></div>
+</body>
+</html>

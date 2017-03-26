@@ -1,0 +1,3 @@
+[run]
+source = tutorial2
+omit = tutorial2/test*

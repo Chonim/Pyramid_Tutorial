@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = tutorial2:main
+      [console_scripts]
+      initialize_tutorial2_db = tutorial2.scripts.initializedb:main
+      
