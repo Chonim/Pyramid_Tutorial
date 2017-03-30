@@ -6,3 +6,28 @@ function initMap() {
     zoom: 8
   });
 }
+
+$(document).ready(function() {
+
+    initMap();
+    var pos = $("#map").position();
+    var position = pos.left;
+
+    $('.side-menu li').each(function(i) {
+        var t = $(this);
+            if (position >= 240) {
+              setTimeout(function() {
+                t.addClass('hide-menu');
+              }, (i + 1) * 10);
+        } else {
+            setTimeout(function() {
+                t.removeClass('hide-menu');
+            }, (i + 1) * 30);
+        }
+    });
+
+    $('.side-menu').hover(function() {
+        $('.side-menu').css("width",0)
+    })
+
+})

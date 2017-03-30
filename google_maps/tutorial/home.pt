@@ -2,14 +2,57 @@
 <html lang="en">
 <head>
     <title>Quick Tutorial: ${name}</title>
-    <link rel="stylesheet"
-          href="${request.static_url('tutorial:static/style.css') }"/>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBsYVLaGllEz-XZYoF6xv_wqPsrG0k7oFs&libraries=places&callback=initMap"
-        async defer></script>
+    <link rel="stylesheet" href="${request.static_url('tutorial:static/style.css') }"/>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBsYVLaGllEz-XZYoF6xv_wqPsrG0k7oFs&libraries=places"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="${request.static_url('tutorial:static/app.js') }"></script>
 </head>
 <body>
+
+<nav class="side-menu">
+    <h3>Sections</h3>
+    <ul class="Sections">
+      <li><a href="#">Most Loved</a></li>
+      <li><a href="#">Most Hated</a></li>
+      <li><a href="#">Popular</a></li>
+      <li><a href="#">Latest</a></li>
+    </ul>
+
+    <h3>Topics</h3>
+
+    <ul class="Topics">
+      <li><a href="#">Civil Liberties</a></li>
+      <li><a href="#">Crime</a></li>
+      <li><a class="active" href="#">Education</a></li>
+      <li><a href="#">Government</a></li>
+      <li><a href="#">Environment</a></li>
+      <li><a href="#">Family</a></li>
+      <li><a href="#">Instant Karma</a></li>
+      <li><a href="#">Justice</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Religion</a></li>
+      <li><a href="#">Science</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Faith</a></li>
+      <li><a href="#">Military</a></li>
+      <li><a href="#">Police</a></li>
+    </ul>
+
+    <h3>Qpolitical</h3>
+
+    <ul class="qpolitical">
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Facebook</a></li>
+    </ul>
+
+  </nav>
+
 <h1 id="page-title">Hi ${name}</h1>
 <div id="map"></div>
 </body>
 </html>
+
+<!-- For sale / rent could be PT / Nutritionist -->
